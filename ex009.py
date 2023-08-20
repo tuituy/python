@@ -1,12 +1,3 @@
 n = int(input('Digite um número inteiro: '))
-t1 = n
-t2 = n*2
-t3 = n*3
-t4 = n*4
-t5 = n*5
-t6 = n*6
-t7 = n*7
-t8 = n*8
-t9 = n*9
-t10 = n*10
-print('A tabuada desse número é:\n {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}'.format(t1,t2,t3,t4,t5,t6,t7,t8,t9,t10))
+
+print('A tabuada desse número é:\n-------------\n 6 x  1 = {}\n 6 x  2 = {}\n 6 x  3 = {}\n 6 x  4 = {}\n 6 x  5 = {}\n 6 x  6 = {}\n 6 x  7 = {}\n 6 x  8 = {}\n 6 x  9 = {}\n 6 x 10 = {}\n-------------'.format(t1,(n*2),(n*3),(n*4),(n*5),(n*6),(n*7),(n*8),(n*9),(n*10)))
