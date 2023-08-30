@@ -1,3 +1,4 @@
+print('{:=^40}'.format(' LOJAS BORBA    '))
 valor = float(input('Qual o valor do produto? R$'))
 print('-=-'*20)
 opção = int(input('''[1] Dinheiro/cheque , à vista.
