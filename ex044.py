@@ -1,3 +1,4 @@
+print('{:=^40}'.format(' LOJAS BORBA    '))
 valor = float(input('Qual o valor do produto? R$'))
 print('-=-'*20)
 opção = int(input('''[1] Dinheiro/cheque , à vista.
@@ -15,6 +16,7 @@ elif opção == 3:
     print('O valor vai ser de duas parcelas de R$:{}'.format(valor/2))
 elif opção == 4:
 
+
     parcelas = int(input('Quantas parcelas? '))
     juros = valor * 0.20
     pagar = (valor + juros) / parcelas
@@ -24,4 +26,8 @@ elif opção == 4:
 
     else :
         print('Então serão {} parcelas de R$:{:.2f}'.format(parcelas,pagar))
+else:
+    total = 0
+    print('OPÇÃO INVÁLIDA!')
 print('-=-'*20)
+
