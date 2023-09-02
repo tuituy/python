@@ -1,11 +1,13 @@
 homemvelho = ''
-idadegeral = 0 #f
-idadegeralmedia= (idadegeral / 4) #f
+idadegeral = 0
+idadegeralmedia= (idadegeral / 4)
 idadehomemvelho = 0
 
-idadem = 0 #f
+idadem = 0
 
 cont = 1
+
+
 for c in range (1,5):
     n = str(input('Digite o {}º nome: '.format(c)))
     i = int(input('Digite a {}º idade:'.format(c)))
@@ -15,7 +17,7 @@ for c in range (1,5):
     '''))
 
     idadegeral = idadegeral + i
-    print(idadegeral)
+  
     if sexo == 2 and i < 20 :
         idadem = idadem + 1
     elif sexo == 1  and i > idadehomemvelho:
