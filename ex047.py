@@ -1,5 +1,8 @@
 
-for c in range (2,50, 2):
-    print(c)
+for c in range (2,51,2):
+
+    if c % 2 == 0:
+        print(c,end=' ')
+print('Fim')
 
 
