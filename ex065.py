@@ -1,32 +1,38 @@
-primeirovalor = 0
-segundovalor = 0
-media = 0
-r = ''
+num1 = 0
 cont = 1
+num2 = 0
 maior = 0
 menor = 0
-while r != 'N':
-    primeirovalor = int(input('Digite um número para saber sua média: '))
-    segundovalor = int(input('Digite o número para saber sua média: '))
+r = 'S'
+while num1 != 'N' and r == 'S':
+
+    num1 = int(input('Digite um número para calcular a média: '))
+
+    media = (num1 + num2) / cont
+
+    num2 = num2 + num1
+
     if cont == 1:
-        media = primeirovalor + segundovalor / 2
-        menor = primeirovalor
-        maior = primeirovalor
-        v2 = v1 + v2
-        v1 = 0
-        cont += 1
-        if cont < 1:
-            media = v1 + v2 / cont
-    if v1 < menor :
-        menor = v1
-    elif v1 > maior:
-        maior = v1
+        maior = num1
+        menor = num1
+    elif num1 > maior:
+        maior = num1
+    elif num1 < menor:
+        menor = num1
 
 
-    print(media)
+    print('''[{}] A soma dos números
+[{}]Quantidade de números somados
+[{}]Média 
+[{}]Maior número digitado
+[{}]Menor número digitado'''.format(num2,cont,media,maior,menor))
+    cont += 1
+    media = 0
+    num1 = 0
+    if num1 == 0:
+        r = str(input('Deseja continuar? [S/N]').upper())
 
-    r = print(input('Deseja continuar? [s/n]').upper())
-    if r == 'N':
-        media = (v1 + v2) / cont
-        print('A média entre todos os valores foi {}, o MENOR valor foi {} e o MAIOR valor foi {}'.format(media, menor,maior))
+
+
+
 
