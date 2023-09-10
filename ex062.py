@@ -8,7 +8,7 @@ while fim > 0:
     ptermo += razao
     fim -= 1
     if fim == 0:
-        fim = int(input('Se deseja continuar digite quantos mais, ou digite 0 para sair: '))
+        fim = int(input('\nSe deseja continuar digite quantos mais, ou digite 0 para sair: '))
         if fim == 0:
             print('Fim')
             fim = -1
