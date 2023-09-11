@@ -4,14 +4,11 @@ num2 = 0
 maior = 0
 menor = 0
 r = 'S'
+
 while num1 != 'N' and r == 'S':
-
     num1 = int(input('Digite um número para calcular a média: '))
-
     media = (num1 + num2) / cont
-
     num2 = num2 + num1
-
     if cont == 1:
         maior = num1
         menor = num1
@@ -19,8 +16,6 @@ while num1 != 'N' and r == 'S':
         maior = num1
     elif num1 < menor:
         menor = num1
-
-
     print('''[{}] A soma dos números
 [{}]Quantidade de números somados
 [{}]Média 
