@@ -2,20 +2,18 @@ maioridade = 0
 homens = 0
 mulhermenor = 0
 
-
-
-
-
 while True:
     print('_' * 25)
     print('   CADASTRE UMA PESSOA      ')
     print('_' * 25)
     idade = int(input('Idade: '))
-    sexo = str(input('Sexo: [M/F]')).upper().strip()
-    resp = 'S'
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Sexo: [M/F]')).upper().strip()[0]
+    resp = ' '
 
-
-    resp = str(input('Quer continuar? [S/N]')).upper().strip()
+    while resp not in 'SN':
+        resp = str(input('Quer continuar? [S/N]')).upper().strip()[0]
 
     if idade > 18:
         maioridade += 1
