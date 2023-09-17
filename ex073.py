@@ -15,7 +15,7 @@ print('-='*15)
 
 for pos,times in enumerate(times):
     if times == 'Corinthians':
-        print(f'O time {times} está na {pos+1} posição.')
+        print(f'O time {times} está na {pos+1}ª posição.')
 
 
 

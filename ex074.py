@@ -3,7 +3,7 @@ numeros = ' '
 maior = ''
 menor = ''
 while len(numeros) <= 5:
-    sorteio = randint(1,10)
+    sorteio = randint(0,9)
     if numeros == ' ':
         maior = sorteio
         menor = sorteio
