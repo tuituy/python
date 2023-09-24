@@ -6,8 +6,8 @@ while cont in 'Ss':
     num = int(input('Digite um valor: '))
     lista.append(num)
     cont = str(input('Quer continuar? [S/N]'))
-print(lista)
 
+print('=-'*30)
 print(f'Você digitou {len(lista)} elementos.')
 
 print(f'Os valores em ordem descrescente são {sorted(lista, reverse = True)}')
