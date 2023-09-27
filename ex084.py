@@ -2,7 +2,7 @@ pessoas = []
 pessoa = []
 maiorpeso = []
 menorpeso = []
-
+nomemaior = []
 
 total = 0
 
@@ -29,11 +29,6 @@ while resp == 'S':
         menorpeso.append(pessoa[:])
         if pessoa[1] < menorpeso[0][1]:
             del menorpeso[0]
-    print(maiorpeso)  #
-    print(menorpeso)  #
-
-
-
 
     pessoa.clear()
 
@@ -41,6 +36,5 @@ while resp == 'S':
 
 print('=-'*40)
 print(f'Ao todo, você cadastrou {total} pessoas.')
-print(f'O maior peso foi de {maiorpeso[0][1]}. Peso de {maiorpeso[0,0]}')
-print(f'O menor peso foi de {menorpeso[0][1]}. Peso de {menorpeso[0,0]}')
-
+print(f'O maior peso foi de {maiorpeso[0][1]}Kg Peso de {maiorpeso[0][0],maiorpeso[1][0]}')
+print(f'O menor peso foi de {menorpeso[0][1]}Kg Peso de {menorpeso[0][0],menorpeso[1][0]}')
