@@ -18,7 +18,7 @@ if matriz[1][1] > matriz[1][0] and matriz[1][1] > matriz[1][2]:
 
 elif matriz[1][2] > matriz[1][0] and matriz[1][2] > matriz[1][1]:
     maiors = matriz[1][2]
-    print(maiors)
+    
 
 for l in range(0,3):
     for c in range(0,3):
