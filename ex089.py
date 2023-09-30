@@ -31,18 +31,15 @@ print('-'*30)
 for c in range (0,len(lista)):
     print(f'{c:<4}{lista[c][0]:<10}{media[c]:>8}')
 
-while resp2 != 999:
-    resp2.append(print(input('Mostrar notas de qual aluno? (999 interrompe):')))
-
-    while True:
-        print('-'*35)
-        opc = int(input('Mostrar notas de qual aluno? (999 interrompe): '))
-        if opc == 999:
-            print('FINALIZANDO...')
-            break
-        if opc <= len(lista):
-            print(f'Notas de {lista[opc][0]} são {lista[opc][1],lista[opc][2]}')
-
+while True:
+    print('-'*35)
+    opc = int(input('Mostrar notas de qual aluno? (999 interrompe): '))
+    if opc == 999:
+        print('FINALIZANDO...')
+        break
+    if opc <= len(lista):
+        print(f'Notas de {lista[opc][0]} são {lista[opc][1],lista[opc][2]}')
+print('<<< VOLTE SEMPRE >>>')
 
 
 
