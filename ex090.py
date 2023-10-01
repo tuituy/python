@@ -10,3 +10,6 @@ if aluno['media'] >= 7:
 else:
     situação = 'Reprovado'
     print(f'- situação é igual a {situação}')
+
+#for k,v in aluno.items():
+    #print(f''{k} é igual a {v}')
