@@ -1,8 +1,8 @@
 from datetime import date
 pessoa = {}
 data = date.today()
-tempoposentar = 0
 
+anosaposentar = 35 -  data.year
 
 nome = str(input('Nome: '))
 pessoa['nome'] = nome
@@ -16,7 +16,7 @@ if carteira != 0:
     pessoa['contatação'] = contratação
     salario = float(input('Salário: '))
     pessoa['salario'] = salario
-    pessoa['aposentadoria'] = 35 - (data.year - contratação)
+    pessoa['aposentadoria'] = 35 - (data.year - contratação) + idade
 
 print(pessoa)
 for k,v in pessoa.items():
