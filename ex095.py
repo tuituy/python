@@ -21,11 +21,13 @@ print('-='*30)
 print(f'cod nome             gols           total')
 print('-'*40)
 for c in range(0,len(jogadores)):
-    print(f'{c} {jogadores[c]["nome"]}             {jogadores [c]["gols"]}     {jogadores[c]["total"]}')
+    print(f'{c} {jogadores[c]["nome"]}             {jogadores [c]["gols"]}     {jogadores[c]["total"]:<15}')
 print()
 print('-'*40)
 while True:
     dados = int(input('Mostrar dados de qual jogador? (999 para parar) '))
+    if dados > len(jogadores):
+        print('ERRO,Não existe esse jogador')
     if dados == 999:
         print('Volte Sempre')
         break
