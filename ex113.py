@@ -1,23 +1,29 @@
 def leiaInt(n):
     while True:
         try:
-            a = int(input('Digite um número Inteiro: '))
-            return a
-        except:
+            a = int(input(n))
+        except (ValueError, TypeError):
             print('\033[0;31mERRO. Por favor digite um número Inteiro válido\033[m')
+            continue
+        except (KeyboardInterrupt):
+            print('\033[31mUsuário preferiu não digitar esse número.\033[m')
+            return 0
         else:
-            break
+            return a
 
 
 def leiafloat(n):
     while True:
         try:
-            a = float(input('Digite um número Real: '))
-            return a
-        except:
+            a = float(input(n))
+        except (ValueError, TypeError):
             print('\033[0;31mERRO. Por favor digite um número Real válido\033[m')
+            continue
+        except (KeyboardInterrupt):
+            print('\033[31mUsuário preferiu não digitar esse número.\033[m')
+            return 0
         else:
-            break
+            return a
 
 
 inteiro = leiaInt('Digite um número Inteiro: ')
