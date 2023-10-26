@@ -15,7 +15,10 @@ while True:
 
 
     elif resp == 2:
-        cabeçalho1('Opção 2')
+        cabeçalho1('NOVO CADASTRO')
+        nome = str(input('Nome: '))
+        idade = leiaInt('Idade: ')
+        cadastrar(arq, nome, idade)
 
     elif resp == 3:
         cabeçalho1('Saindo do sistema... Até logo!')
